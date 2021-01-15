@@ -1,0 +1,146 @@
+/* Core Styles */
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(42, 42, 42);
+    }
+
+    a{  
+        text-decoration: none;
+    }
+
+    /* Adjusting input felid */
+    input{
+        border: 1px solid rgb(134, 131, 131);
+        border-radius: 2px;
+        padding: 5px 5px 5px 5px;
+    }
+
+    input:focus{
+        outline: none;
+        box-shadow: inset 0px 0px 3px 0px;
+    }
+
+    /* adjusting labels */
+    label{
+        padding-bottom: 4px;
+    }
+
+/* Adding responsiveness to site */
+
+    /* Adding grids */
+    main{
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 15em)) 1fr;
+    }
+
+    /* Adjusting header */
+    header{
+        margin: 1.6em 0 1em 0;
+        grid-column: 2/4;
+        justify-self: center;
+    }
+
+    span, i{
+        color: #2a72cc;
+    }
+    
+    /* Adjusting form and table container */
+    div.container{
+        grid-column: 2/4;
+        justify-self: center;
+        margin-top: 1em;
+        padding: 0 5px;
+        width: 100%;  
+    }
+
+/* Designing UI */
+
+    /* Adjusting form */
+    div.form{
+        padding: 0 1em;
+    }
+    /* converting input, label rows to columns */
+    .form_title, .form_author, .form_isbn, .form_btn{
+        display:flex;
+        flex-direction: column;
+        margin-bottom: 1em;
+    }
+
+    /* Designing button */
+    #submit_btn {
+        background-color: #2a72cc;
+        font-size: 1em;
+        color: #fff;
+        border: none;
+        padding: 0.5em 2em;
+    }   
+
+    .from_btn{
+        text-align: center;
+    }
+
+    /* Designing notifications */
+    div.danger, div.success{
+        border: 1px solid rgba(255, 0, 0, 0.920);
+        border-radius: 2px;
+        margin: 0 1em;
+        margin-bottom: 1em;
+        padding: 5px 12px;
+        background-color: rgba(255, 0, 0, 0.920);
+        display: none;
+    }
+
+    div.danger span, div.success span{
+        color: #fff;
+    }
+
+    div.success{
+        background-color: green;
+        border-color: green;
+    }
+
+    /* Designing table */
+    div.table{
+        margin-top: 2em;
+    }
+
+    table{
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th{        
+        padding: 6px 10px;
+        font-size: 18px;
+        border-top: 1px solid rgb(170, 170, 170);
+        border-bottom: 1px solid rgb(170, 170, 170);
+    }
+
+    td{
+        padding: 10px 20px;
+        text-align: left;
+    }
+
+    tbody tr:nth-child(odd) {
+        background-color:#ddd;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color:#eff;
+    }
+
+    /* Designing remove button */
+    tr .remove{
+        border: 1px solid rgba(255, 0, 0, 0.920);
+        border-radius: 3px;
+        background-color: rgba(255, 0, 0, 0.920);
+        padding: 1.5px 4px;
+        color: #fff; 
+    }
+
+    
+    
